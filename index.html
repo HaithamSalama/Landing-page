@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title >Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body >
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header  id="nav_container" class="page__header">
+    <nav  class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Landing Page </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="Public_Scrutinise" data-nav="Section 1" >
+      <div class="landing__container">
+        <h2>Public Scrutinise</h2>
+        <p>Demands for transparency are central to the current culture of public debate. Climate scientists and their
+          associations, the former English football captain, individual politicians and political parties, arts
+          organisations, BBC broadcasters, financial institutions, and local government have all been criticised in the
+          past few days for not being transparent enough. This has led to demands for transparency of that entity we used to call the private
+          citizen.</p>
+
+        <p>The controversies about hacked e-mails, withheld climate change data, and the scientific veracity of some
+          predictions of environmental damage have encouraged an unhealthy kind of cynicism, suspicious of all
+          information regardless of its sources.</p>
+      </div>
+    </section>
+    <section id="London_Olympics" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>London Olympics </h2>
+        <p>The Chinese are profoundly rethinking what a Gold medal means. In the past several decades, it was hugely
+          exciting for the Chinese to obtain a gold medal, primarily because we paid much more attention to winning than
+          other countries. It encouraged us to try our best to win the gold even though it almost guaranteed that there
+          would be cruel personal sacrifices needed to attain it. But it worked. Now China is a clear winner and cannot
+          be ignored any longer.</p>
+
+        <p>There is also a large number of Chinese people who take it to extremes and throw away the national interest
+          completely. This makes those who think that athletes should fight for their country, fight to be first—the
+          very basis of competitive sport—quite angry.</p>
+      </div>
+    </section>
+    <section id="Social_Media" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Social Media</h2>
+        <p>First, I should mention Buffer, a tool that allows you to post on Twitter, Facebook, and other social media
+          platforms in advance. It is also an analytical program that allows you to see what activity you got on certain
+          posts and what time is the best to post. It also has a browser extension for easy posting. It has become a
+          respected name in social media management.
+          <br>
+          You know those long links you want to post on your profiles and that look awkward? You can shorten them
+          effectively with Bit.ly. This comes in handy especially for Twitter with its 140-character limit.
+          <br>
+          If you want to find business leads through social media, the application Oktopost focuses on just that. You
+          can also manage your social media accounts through it. It is the most comprehensive business-to-business
+          social media management system. </p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <a id="back_top" href="">Back to top</a>
+    <script src="js/app.js">
+    </script>
+  </footer>
+
+</body>
+
+</html>
